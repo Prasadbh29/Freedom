@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function onReady() {
     });
 
     // Active nav on scroll
-    var sections = ['#home', '#trailer', '#features', '#gallery', '#tech', '#about', '#contact']
+    var sections = ['#home', '#gameplay', '#features', '#tech', '#about']
         .map(function(sel){ return document.querySelector(sel); })
         .filter(Boolean);
     var navLinks = Array.prototype.slice.call(document.querySelectorAll('.nav-menu a'));

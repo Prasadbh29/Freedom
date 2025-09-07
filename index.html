@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Freedom – A Horror Game in Unreal Engine 5</title>
-    <meta name="description" content="Freedom is a cinematic Unreal Engine 5 horror game by a solo developer. Watch the trailer, explore features, gallery, tech stack, and get in touch.">
+    <meta name="description" content="Freedom is a cinematic Unreal Engine 5 horror game by a solo developer. Watch the gameplay, explore features, gallery, tech stack, and get in touch.">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,19 +18,17 @@
             <button class="nav-toggle" aria-expanded="false" aria-controls="navMenu">☰</button>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#trailer">Trailer</a></li>
+                <li><a href="#gameplay">Gameplay</a></li>
                 <li><a href="#features">Features</a></li>
-                <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#tech">Tech Stack</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <header class="hero" id="home" aria-label="Hero" data-parallax>
         <div class="hero-media" aria-hidden="true">
-            <video class="hero-video" autoplay muted loop playsinline poster="" preload="metadata">
+            <video class="hero-video" autoplay muted loop playsinline poster="" preload="auto">
                 <source src="2024-08-23 23-37-13.mp4" type="video/mp4">
             </video>
             <div class="hero-overlay"></div>
@@ -38,19 +36,20 @@
         </div>
         <div class="container hero-content">
             <h1 class="hero-title">Freedom – A Horror Game in Unreal Engine 5</h1>
-            <p class="hero-subtitle">A cinematic, atmospheric journey through fear. Built with Unreal Engine 5.</p>
+            <p class="hero-subtitle">A cinematic, atmospheric journey through fear crafted by a solo developer. Built with Unreal Engine 5 and designed for tense exploration, dynamic AI encounters, and rich environmental storytelling.</p>
+            <p class="hero-subtitle">Sneak through dark corridors, solve light puzzles, and survive while being hunted—every step pushes the story forward.</p>
             <div class="hero-actions">
-                <a class="btn btn-primary" href="#trailer">Watch Trailer</a>
+                <a class="btn btn-primary" href="#gameplay">Watch Gameplay</a>
             </div>
         </div>
     </header>
 
     <main>
-        <section class="trailer-section section reveal" id="trailer" aria-label="Gameplay trailer">
+        <section class="trailer-section section reveal" id="gameplay" aria-label="Gameplay">
             <div class="container">
-                <h2 class="section-title">Official Trailer</h2>
+                <h2 class="section-title">Gameplay</h2>
                 <div class="video-frame glow">
-                    <video class="video-element" controls playsinline preload="metadata">
+                    <video class="video-element" controls playsinline preload="auto">
                         <source src="2024-08-23 23-37-13.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -74,22 +73,7 @@
             </div>
         </section>
 
-        <section class="gallery section reveal" id="gallery" aria-label="Screenshot gallery">
-            <div class="container">
-                <h2 class="section-title">Gallery</h2>
-                <div class="gallery-grid">
-                    <a href="#" class="gallery-item" data-img="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1280' height='720'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%2312171e'/><stop offset='1' stop-color='%230b0f15'/></linearGradient></defs><rect width='100%' height='100%' fill='url(%23g)'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='%23aeb6c2' font-size='48' font-family='Segoe UI, Arial'>Screenshot</text></svg>"><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='640' height='360'><rect width='100%' height='100%' fill='%23101714'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='%23aeb6c2' font-size='22' font-family='Segoe UI, Arial'>Screenshot 1</text></svg>" alt="Screenshot 1"></a>
-                    <a href="#" class="gallery-item" data-img="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1280' height='720'><defs><linearGradient id='g2' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%230b0f15'/><stop offset='1' stop-color='%2312171e'/></linearGradient></defs><rect width='100%' height='100%' fill='url(%23g2)'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='%23aeb6c2' font-size='48' font-family='Segoe UI, Arial'>Screenshot</text></svg>"><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='640' height='360'><rect width='100%' height='100%' fill='%23101714'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='%23aeb6c2' font-size='22' font-family='Segoe UI, Arial'>Screenshot 2</text></svg>" alt="Screenshot 2"></a>
-                    <a href="#" class="gallery-item" data-img="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1280' height='720'><rect width='100%' height='100%' fill='%230b0f15'/><circle cx='50%' cy='50%' r='160' fill='none' stroke='%239d7bff' stroke-width='4' opacity='0.35'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='%23aeb6c2' font-size='48' font-family='Segoe UI, Arial'>Screenshot</text></svg>"><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='640' height='360'><rect width='100%' height='100%' fill='%23101714'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='%23aeb6c2' font-size='22' font-family='Segoe UI, Arial'>Screenshot 3</text></svg>" alt="Screenshot 3"></a>
-                    <a href="#" class="gallery-item" data-img="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1280' height='720'><rect width='100%' height='100%' fill='%2312171e'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='%23aeb6c2' font-size='48' font-family='Segoe UI, Arial'>Screenshot</text></svg>"><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='640' height='360'><rect width='100%' height='100%' fill='%23101714'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='%23aeb6c2' font-size='22' font-family='Segoe UI, Arial'>Screenshot 4</text></svg>" alt="Screenshot 4"></a>
-                    <a href="#" class="gallery-item" data-img="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1280' height='720'><rect width='100%' height='100%' fill='%230b0f15'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='%23aeb6c2' font-size='48' font-family='Segoe UI, Arial'>Screenshot</text></svg>"><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='640' height='360'><rect width='100%' height='100%' fill='%23101714'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='%23aeb6c2' font-size='22' font-family='Segoe UI, Arial'>Screenshot 5</text></svg>" alt="Screenshot 5"></a>
-                </div>
-            </div>
-            <div class="modal" id="imgModal" aria-hidden="true" role="dialog" aria-modal="true">
-                <button class="modal-close" aria-label="Close">×</button>
-                <img class="modal-img" src="" alt="Expanded screenshot">
-            </div>
-        </section>
+        
 
         <section class="features-grid section reveal" aria-label="Key features grid">
             <div class="container">
@@ -170,54 +154,81 @@
                     <ul class="about-meta">
                         <li>📍 Based in <strong>Pune, India</strong></li>
                         <li>🎯 Interests: Game Development, Web Apps, AI Tools, Scalable Systems</li>
-                        <li>📬 Contact: <a href="mailto:your@email">your email</a> · <a href="https://github.com/yourgithub" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/yourlinkedin" target="_blank" rel="noopener">LinkedIn</a></li>
+                        <li>📬 Contact: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=prasadbhagyawant944@gmail.com" >prasadbhagyawant944@gmail.com</a> </li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <section class="contact section reveal" id="contact" aria-label="Contact form">
-            <div class="container">
-                <h2 class="section-title">Contact</h2>
-                <p class="muted">Phone: <strong>+91 7972695747</strong></p>
-                <!-- Note: For the form to submit, open the site via http:// (local server) or deploy it. Opening the HTML file directly blocks external submissions. -->
-                <form class="contact-form" action="https://formsubmit.co/prasadbhagyawant944@gmail.com" method="POST" novalidate>
-                    <input type="hidden" name="_subject" value="Freedom Site Contact" />
-                    <input type="hidden" name="_template" value="box" />
-                    <input type="hidden" name="_autoresponse" value="Thanks for reaching out about Freedom! I will get back to you shortly." />
-                    <input type="hidden" name="_captcha" value="false" />
-                    <div class="form-row">
-                        <label>Name
-                            <input type="text" name="name" placeholder="Your name" required>
-                        </label>
-                        <label>Email
-                            <input type="email" name="email" placeholder="you@example.com" required>
-                        </label>
-                    </div>
-                    <label>Message
-                        <textarea name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
-                    </label>
-                    <div class="form-actions">
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                        <div class="socials">
-                            <a href="https://github.com/yourgithub" target="_blank" rel="noopener">GitHub</a>
-                            <a href="https://www.linkedin.com/in/yourlinkedin" target="_blank" rel="noopener">LinkedIn</a>
-                            <a href="mailto:prasadbhagyawant944@gmail.com">Email</a>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </section>
+        
     </main>
 
     <footer class="site-footer">
-        <div class="container">
-            <p>© 2025 Your Name</p>
+        <div class="container" style="text-align: center;">
+            <p>© 2025 Prasad Bhagyawant</p>
         </div>
     </footer>
 
     <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
 
+    <script>
+    // Dynamically load Three.js from CDN, then initialize particles. Fallback to script.js starfield otherwise.
+    (function(){
+        var cdn = 'https://unpkg.com/three@0.158.0/build/three.min.js';
+        var s = document.createElement('script');
+        s.src = cdn;
+        s.async = true;
+        s.onload = function(){ try { initThreeBackground(); } catch(e) { console.warn(e); } };
+        s.onerror = function(){ console.warn('Three.js failed to load, using 2D starfield fallback.'); };
+        document.head.appendChild(s);
+        function initThreeBackground(){
+            if (!window.THREE) return;
+            var container = document.body;
+            var renderer = new THREE.WebGLRenderer({ antialias:true, alpha:true });
+            renderer.setPixelRatio(window.devicePixelRatio || 1);
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            renderer.domElement.style.position = 'fixed';
+            renderer.domElement.style.inset = '0';
+            renderer.domElement.style.zIndex = '-2';
+            container.appendChild(renderer.domElement);
+
+            var scene = new THREE.Scene();
+            var camera = new THREE.PerspectiveCamera(60, window.innerWidth/window.innerHeight, 0.1, 1000);
+            camera.position.z = 5;
+
+            var geometry = new THREE.BufferGeometry();
+            var COUNT = 1200;
+            var positions = new Float32Array(COUNT * 3);
+            for (var i = 0; i < COUNT; i++) {
+                positions[i*3+0] = (Math.random()-0.5) * 40;
+                positions[i*3+1] = (Math.random()-0.5) * 40;
+                positions[i*3+2] = (Math.random()-0.5) * 40;
+            }
+            geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+
+            var material = new THREE.PointsMaterial({ color: 0x9d7bff, size: 0.02, transparent:true, opacity:0.9 });
+            var points = new THREE.Points(geometry, material);
+            scene.add(points);
+
+            var clock = new THREE.Clock();
+            function onResize(){
+                camera.aspect = window.innerWidth / window.innerHeight;
+                camera.updateProjectionMatrix();
+                renderer.setSize(window.innerWidth, window.innerHeight);
+            }
+            window.addEventListener('resize', onResize);
+
+            function animate(){
+                var t = clock.getElapsedTime();
+                points.rotation.y = t * 0.02;
+                points.rotation.x = Math.sin(t * 0.2) * 0.05;
+                renderer.render(scene, camera);
+                requestAnimationFrame(animate);
+            }
+            animate();
+        }
+    })();
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
