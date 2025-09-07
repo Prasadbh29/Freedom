@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Freedom – A Horror Game in Unreal Engine 5</title>
+    <meta name="description" content="Freedom is a cinematic Unreal Engine 5 horror game by a solo developer. Watch the trailer, explore features, gallery, tech stack, and get in touch.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#home">Skip to content</a>
+
+    <canvas id="starfield" aria-hidden="true"></canvas>
+
+    <nav class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <div class="brand">Freedom</div>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="navMenu">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#trailer">Trailer</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#tech">Tech Stack</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero" id="home" aria-label="Hero" data-parallax>
+        <div class="hero-media" aria-hidden="true">
+            <video class="hero-video" autoplay muted loop playsinline poster="" preload="metadata">
+                <source src="2024-08-23 23-37-13.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+            <div class="nebula"></div>
+        </div>
+        <div class="container hero-content">
+            <h1 class="hero-title">Freedom – A Horror Game in Unreal Engine 5</h1>
+            <p class="hero-subtitle">A cinematic, atmospheric journey through fear. Built with Unreal Engine 5.</p>
+            <div class="hero-actions">
+                <a class="btn btn-primary" href="#trailer">Watch Trailer</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="trailer-section section reveal" id="trailer" aria-label="Gameplay trailer">
+            <div class="container">
+                <h2 class="section-title">Official Trailer</h2>
+                <div class="video-frame glow">
+                    <video class="video-element" controls playsinline preload="metadata">
+                        <source src="2024-08-23 23-37-13.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-project section reveal" id="features" aria-label="Project description and highlights">
+            <div class="container grid two-col">
+                <div>
+                    <h2 class="section-title">About the Project</h2>
+                    <p>Freedom is an immersive horror experience developed with <strong>Unreal Engine 5</strong>, leveraging <strong>C++</strong> and <strong>Blueprints</strong>. Development began in 2024 and continues to evolve with new mechanics, environments, and AI behaviors.</p>
+                    <p>Role: <strong>Solo Developer</strong>. Responsibilities include gameplay programming, AI design, level art, and performance optimization.</p>
+                </div>
+                <ul class="highlights">
+                    <li><span class="icon">🎮</span><strong>Immersive Gameplay</strong><br><span class="muted">Tension, pacing, and atmosphere drive player experience.</span></li>
+                    <li><span class="icon">🤖</span><strong>AI-driven Enemies</strong><br><span class="muted">Adaptive behaviors and pathfinding for relentless pursuit.</span></li>
+                    <li><span class="icon">💡</span><strong>Realistic Lighting</strong><br><span class="muted">Lumen, shadows, and volumetrics for cinematic scenes.</span></li>
+                    <li><span class="icon">⚡</span><strong>Optimized Performance</strong><br><span class="muted">Scalable settings and profiling for smooth gameplay.</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="gallery section reveal" id="gallery" aria-label="Screenshot gallery">
+            <div class="container">
+                <h2 class="section-title">Gallery</h2>
+                <div class="gallery-grid">
+                    <a href="#" class="gallery-item" data-img="assets/screen1.jpg"><img src="assets/screen1.jpg" alt="Screenshot 1"></a>
+                    <a href="#" class="gallery-item" data-img="assets/screen2.jpg"><img src="assets/screen2.jpg" alt="Screenshot 2"></a>
+                    <a href="#" class="gallery-item" data-img="assets/screen3.jpg"><img src="assets/screen3.jpg" alt="Screenshot 3"></a>
+                    <a href="#" class="gallery-item" data-img="assets/screen4.jpg"><img src="assets/screen4.jpg" alt="Screenshot 4"></a>
+                    <a href="#" class="gallery-item" data-img="assets/screen5.jpg"><img src="assets/screen5.jpg" alt="Screenshot 5"></a>
+                </div>
+            </div>
+            <div class="modal" id="imgModal" aria-hidden="true" role="dialog" aria-modal="true">
+                <button class="modal-close" aria-label="Close">×</button>
+                <img class="modal-img" src="" alt="Expanded screenshot">
+            </div>
+        </section>
+
+        <section class="features-grid section reveal" aria-label="Key features grid">
+            <div class="container">
+                <h2 class="section-title">Key Features</h2>
+                <div class="card-grid">
+                    <article class="card"><h3>Environment Design</h3><p>Labyrinthine corridors, diegetic storytelling, and interactive props create a living world.</p></article>
+                    <article class="card"><h3>Jump Scares</h3><p>Audio-visual cues, dynamic triggers, and pacing to keep players on edge.</p></article>
+                    <article class="card"><h3>Enemy AI</h3><p>Sensing, patrolling, and chase states with navmesh and perception systems.</p></article>
+                    <article class="card"><h3>Progression</h3><p>Unlockable areas, key items, and environmental puzzles that reward exploration.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="tech section reveal" id="tech" aria-label="Technology stack">
+            <div class="container">
+                <h2 class="section-title">Tech Stack</h2>
+                <div class="tech-groups">
+                    <div class="tech-group">
+                        <h3>Game Engine & Core</h3>
+                        <ul class="tech-list">
+                            <li><span class="tech-logo ue5" aria-hidden="true"></span>Unreal Engine 5 <span class="tag">Nanite</span> <span class="tag">Lumen</span> <span class="tag">Chaos Physics</span> <span class="tag">Niagara</span></li>
+                            <li><span class="tech-logo cpp" aria-hidden="true"></span>C++ <span class="muted">performance-critical gameplay logic</span></li>
+                            <li><span class="tech-logo bp" aria-hidden="true"></span>Blueprints Visual Scripting <span class="muted">rapid prototyping & gameplay</span></li>
+                        </ul>
+                    </div>
+                    <div class="tech-group">
+                        <h3>Graphics & Environment</h3>
+                        <ul class="tech-list">
+                            <li><span class="tech-logo" aria-hidden="true"></span>Quixel Megascans <span class="muted">assets & textures</span></li>
+                            <li><span class="tech-logo ps" aria-hidden="true"></span>Substance Painter / Designer <span class="muted">materials</span></li>
+                            <li><span class="tech-logo" aria-hidden="true"></span>Blender / Maya <span class="muted">modeling, rigging, animations</span></li>
+                        </ul>
+                    </div>
+                    <div class="tech-group">
+                        <h3>Gameplay & Mechanics</h3>
+                        <ul class="tech-list">
+                            <li><span class="tech-logo" aria-hidden="true"></span>AI Behavior Trees <span class="muted">enemy AI & pathfinding</span></li>
+                            <li><span class="tech-logo" aria-hidden="true"></span>Animation Blueprints <span class="muted">character/enemy control</span></li>
+                            <li><span class="tech-logo" aria-hidden="true"></span>Chaos Physics & Ragdoll <span class="muted">realistic physics</span></li>
+                        </ul>
+                    </div>
+                    <div class="tech-group">
+                        <h3>Sound & Immersion</h3>
+                        <ul class="tech-list">
+                            <li><span class="tech-logo" aria-hidden="true"></span>Wwise / FMOD <span class="muted">advanced audio (optional)</span></li>
+                            <li><span class="tech-logo" aria-hidden="true"></span>Unreal Audio Engine <span class="muted">spatial sound & ambience</span></li>
+                        </ul>
+                    </div>
+                    <div class="tech-group">
+                        <h3>Optimization & Deployment</h3>
+                        <ul class="tech-list">
+                            <li><span class="tech-logo" aria-hidden="true"></span>Level of Detail (LOD)</li>
+                            <li><span class="tech-logo" aria-hidden="true"></span>Occlusion & Lighting Optimization</li>
+                            <li><span class="tech-logo" aria-hidden="true"></span>Unreal Packaging <span class="muted">Windows (EXE)</span></li>
+                        </ul>
+                    </div>
+                    <div class="tech-group">
+                        <h3>Version Control / Collaboration</h3>
+                        <ul class="tech-list">
+                            <li><span class="tech-logo git" aria-hidden="true"></span>Git + Git LFS</li>
+                            <li><span class="tech-logo" aria-hidden="true"></span>Perforce (Helix Core)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section reveal" id="about" aria-label="About the developer">
+            <div class="container grid two-col about-grid">
+                <div class="about-photo-wrap">
+                    <img class="avatar" src="WhatsApp Image 2022-08-15 at 10.27.34 AM.jpeg" alt="Portrait of Prasad Bhagyawant">
+                </div>
+                <div class="about-content">
+                    <h2 class="section-title">About the Developer</h2>
+                    <p><strong>Prasad Bhagyawant</strong>, a passionate developer with a strong interest in game development, web technologies, and scalable applications. My journey in tech has been shaped by hands-on projects that merge creativity and problem-solving—ranging from developing a first-person horror game in Unreal Engine 5 to building real-world web applications with React.js, MongoDB, and Django.</p>
+                    <p>With skills in C++, Unreal Engine Blueprints, 3D environment design, and modern full-stack development, I enjoy creating interactive digital experiences that combine design and functionality.</p>
+                    <p>Beyond technical skills, I value clean architecture, optimization, and user-focused design. My long-term vision is to contribute to projects that push the boundaries of immersive experiences and innovative digital solutions.</p>
+                    <ul class="about-meta">
+                        <li>📍 Based in <strong>Pune, India</strong></li>
+                        <li>🎯 Interests: Game Development, Web Apps, AI Tools, Scalable Systems</li>
+                        <li>📬 Contact: <a href="mailto:your@email">your email</a> · <a href="https://github.com/yourgithub" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/yourlinkedin" target="_blank" rel="noopener">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section reveal" id="contact" aria-label="Contact form">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <form class="contact-form" action="#" method="post" novalidate>
+                    <div class="form-row">
+                        <label>Name
+                            <input type="text" name="name" placeholder="Your name" required>
+                        </label>
+                        <label>Email
+                            <input type="email" name="email" placeholder="you@example.com" required>
+                        </label>
+                    </div>
+                    <label>Message
+                        <textarea name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                    </label>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <div class="socials">
+                            <a href="https://github.com/yourgithub" target="_blank" rel="noopener">GitHub</a>
+                            <a href="https://www.linkedin.com/in/yourlinkedin" target="_blank" rel="noopener">LinkedIn</a>
+                            <a href="mailto:you@example.com">Email</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2025 Your Name</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
